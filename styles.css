@@ -1,10 +1,11 @@
     @font-face {
         font-family:fancy;
-        src: url(test.ttf);
+        src: url(../fonts/test.ttf);
     }
     @font-face{
         font-family:caviar;
-        src: url(CaviarDreams.ttf)
+        src: url(../fonts/caviar.ttf);
+        font-weight:normal;
     }
     body {margin:0;}
     .bar{
@@ -32,13 +33,15 @@
         flex:1;
     }
     .link:hover{
-        background: rgba(255,0,0,0.6);
+        background: rgba(38,153,0,0.9);
     }
     .main{
         padding-left: 2em;
         padding-right: 2em;
-        font-size:1.2em;
         text-align:center;
+    }
+    .main p{
+        font-size:1.2em;
         font-family:caviar;
     }
     .adrese{
@@ -49,7 +52,7 @@
     }
     .header{
         text-align: center;
-        height: 10vw;
+        height: 12vw;
         width: 100%;
         background-color:#141516;
     }
@@ -65,23 +68,32 @@
         font-size:2em;
     }
     .containerpoze{
-        display:flex;
-        max-width: 100%;
-        flex-direction: row;
-        flex-wrap:wrap;
-        justify-content: center;
+        margin:auto;
+        width: 40vw;
+        height:40vw;
+        border: black solid 1px;
+        overflow:hidden;
     }
     .containerpoze img{
-        width: 20vw;
-        height:20vw;
-        margin:1vw;
+        width: 30vw;
+        height: 30vw;
+    }
+    .containerpoze button{
+        border:none;
+        background-color: inherit;
+        display:inline-block;
+        height:100%;
+        width: 2vw;
+        background: rgba(200,200,0,0.9);
+        cursor:pointer;
     }
     .footer{
+        bottom:0;
         display:flex;
         flex-direction: row;
         overflow:hidden;
         bottom:0;
-        background-color: rgba(158,211,143,1);
+        background-color: rgba(158,211,143,0.5);
         width:100%;
         height:7vw;
     }
@@ -89,3 +101,61 @@
         flex:1;
         font-family:fancy;
     }
+    .footer img{
+    }
+    .stickysocial{
+        position:fixed;
+        display:flex;
+        text-decoration:none;
+        background-color:#3b5998;
+        right:0;
+        top:1;
+        width:60px;
+        height:50px;
+        border-radius: 10px 0px 0px 10px;
+        justify-content: center;
+        color:white;
+        font-size: 30px;
+        font-family:monospace;
+        line-height: 48px;
+    }
+        .titlu{
+        color:white;
+        font-weight: bold;
+    }
+        .center{
+        display:flex;
+        width: 100%;
+        justify-content: center;
+        margin:10px;
+        height:30vw;
+        margin-bottom:46px;
+    }
+        .wrapper{
+        display:flex;
+        height: 30vw;
+        width: 70vw;
+        background-image:url(../scroller/imagine_1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        text-align: center;
+    }
+        .wrapper a{
+        height:100%;
+        width:100%;
+
+    }
+        .wrapper button{
+        border:none;
+        padding:1vw;
+        background-color: rgba(0,0,0,0.0);
+        width:auto;
+        height:20;
+        font-size: 18px;
+        vertical-align:middle;
+        z-index:9999;
+    }
+.wrapper button:hover{
+   background-color: rgba(0,0,0,0.4);
+}
