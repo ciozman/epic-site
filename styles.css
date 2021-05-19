@@ -68,25 +68,17 @@
         font-size:2em;
     }
     .containerpoze{
-        margin:auto;
-        width: 40vw;
-        height:40vw;
-        border: black solid 1px;
-        overflow:hidden;
+        display:inline-flex;
+        flex-wrap:wrap;
     }
     .containerpoze img{
-        width: 30vw;
-        height: 30vw;
+        flex:1;
+        padding: 10px;
+        height:20vw;
+        width:20vw
     }
-    .containerpoze button{
-        border:none;
-        background-color: inherit;
-        display:inline-block;
-        height:100%;
-        width: 2vw;
-        background: rgba(200,200,0,0.9);
-        cursor:pointer;
-    }
+
+    
     .footer{
         bottom:0;
         display:flex;
