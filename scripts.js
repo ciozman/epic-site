@@ -1,7 +1,9 @@
 var nr = 1
+var nrmax = 2
 function changeImg(x) {
     nr=nr + x;
-    console.log(nr)
-    next = "url('../scroller/imagine_" + nr + ".jpg')"
+    if (nr > nrmax){nr = 1;}
+    if (1 > nr){nr = nrmax;}
+    next = "url('../scroller/imagine_" + nr + ".jpg')";
     document.getElementById("Img").style.backgroundImage = next;
 }
