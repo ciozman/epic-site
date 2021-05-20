@@ -1,5 +1,5 @@
-var nr = 1
-var nrmax = 2
+var nr = 1;
+var nrmax = 29;
 function changeImg(x) {
     nr=nr + x;
     if (nr > nrmax){nr = 1;}
